@@ -3,6 +3,17 @@
     .navigation {
         display: flex;
         justify-content: space-around;
-        
     }
+    .hero-section {
+        .hero-section-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .content {
+                width: 50%;
+            }
+        }
+    }
+
+
 }

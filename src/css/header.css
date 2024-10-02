@@ -2,5 +2,13 @@
   display: flex;
   justify-content: space-around;
 }
+.header .hero-section .hero-section-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .hero-section .hero-section-content .content {
+  width: 50%;
+}
 
 /*# sourceMappingURL=header.css.map */
