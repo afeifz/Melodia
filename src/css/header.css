@@ -1,6 +1,18 @@
 .header .navigation {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.header .navigation .links-middle {
+  display: flex;
+  gap: 5rem;
+}
+.header .navigation .remove-links {
+  text-decoration: none;
+  color: black;
+}
+.header .navigation .links {
+  font-size: 36px;
 }
 .header .hero-section .hero-section-content {
   display: flex;
@@ -8,7 +20,7 @@
   align-items: center;
 }
 .header .hero-section .hero-section-content .content {
-  width: 50%;
+  width: 500px;
 }
 
 /*# sourceMappingURL=header.css.map */
