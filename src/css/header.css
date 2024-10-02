@@ -1,18 +1,6 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-.header {
+.header .navigation {
   display: flex;
-
-  .navigation {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-  }
+  justify-content: space-around;
 }
-
-
 
 /*# sourceMappingURL=header.css.map */
