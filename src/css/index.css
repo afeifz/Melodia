@@ -2,20 +2,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@100..900&family=Onest:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Onest:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@100..900&family=Onest:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-.apresentation-content {
+.apresentation {
+  background-color: #F5F5F5;
+}
+.apresentation .apresentation-content {
   display: flex;
   justify-content: space-between;
   padding: 5rem 5rem;
 }
-.apresentation-content h1 {
+.apresentation .apresentation-content h1 {
   font-family: "Big Shoulders Text", sans-serif;
   color: #181e4e;
   font-size: 36px;
 }
-.apresentation-content h1 strong {
+.apresentation .apresentation-content h1 strong {
   font-weight: 900;
 }
-.apresentation-content button {
+.apresentation .apresentation-content button {
   background-color: #61efb4;
   color: #181e4e;
   border: none;
@@ -24,6 +27,24 @@
   border-radius: 5px;
   font-size: 16px;
   font-weight: 600;
+}
+.apresentation .sections-apresentation {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+.apresentation .sections-apresentation section {
+  width: 200px;
+  padding: 5rem;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+}
+.apresentation .sections-apresentation section h1 {
+  font-family: "Big Shoulders Text", sans-serif;
+  font-size: 26px;
+}
+.apresentation .sections-apresentation section p {
+  font-family: "Onest", sans-serif;
 }
 
 * {
