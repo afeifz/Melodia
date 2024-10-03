@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melodia</title>
+    <link rel="stylesheet" href="./src/css/header.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navigation">
+            <div>
+                <a class="remove-links links" href=""><span>Melo</span>dia</a>
+            </div>
+            <div class="links-middle">
+                <a class="remove-links links" href="">Home</a>
+                <a class="remove-links links" href="">Musicas</a>
+                <a class="remove-links links" href="">Sobre</a>
+                <a class="remove-links links" href="">Assinar</a>
+            </div>
+            <div>
+                <a class="remove-links links" href="">Contato</a>
+            </div>
+        </nav>
+        <section class="hero-section">
+            <div class="hero-section-content">
+                <div class="content">
+                    <h1 class="title">MELODIA</h1>
+                    <h2 class="subtitle">Sua Música, Sua Forma</h2>
+                    <P class="description">Com um vasto catálogo de músicas, playlists personalizadas e recomendações baseadas no seu gosto, você pode explorar novos artistas e redescobrir seus favoritos. Ouça online ou offline e compartilhe suas descobertas com amigos. Mergulhe na música como nunca antes!</P>
+                    <button>Comece a escutar</button>
+                </div>
+                <img class="image" src="./src/img/girl-listen-removebg-preview.png" alt="">
+            </div>
+        </section>
+    </header>
+    <main></main>
+    <footer></footer>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melodia</title>
+</head>
+<body>
+    <header>
+        
+    </header>
+    <main></main>
+    <footer></footer>
+</body>
+</html>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+$size-nav: 33px;
+$color-base: #bd07bd;
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: white;
+    
+}
+
+.header {
+    background-color: black;
+    height: 100vh;
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        span {
+            color: $color-base;
+        }
+        .links-middle {
+            display: flex;
+            gap: 5rem;
+        }
+        .remove-links {
+            text-decoration: none;
+            color: white;
+        }
+        .links {
+            font-size: $size-nav;
+        }
+    }
+    .hero-section {
+        .hero-section-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 7rem;
+            .content {
+                width: 500px;
+                .title {
+                    font-size: 30px;
+                    color: $color-base;
+                }
+                .subtitle {
+                    font-size: 26px;
+                }
+                .description {
+                    font-size: 20px ;
+                }
+                button {
+                    border: none;
+                    padding: 2rem;
+                    background-color: $color-base;
+                    border-radius: 10px;
+                    font-size: 20px;
+                    color: white;
+                    cursor: pointer;
+                    font-family: 'Poppins',sans-serif;
+                    font-weight: 600;
+                }
+
+               
+            }
+        }
+    }
+
+
+}
