@@ -1,0 +1,32 @@
+@import 'variables';
+#contato {
+    .container {
+        padding: 2rem;
+        margin: 0;
+        form {
+            h2 {
+                color: $color-sec;
+                font-family: $font-sec;
+                strong {
+                    font-weight: 900;
+                }
+            }
+            .form-group {
+                font-family: $font-main;
+         
+            }
+            button {
+                background-color: $color-main;
+                color: $color-sec;
+                border: none;
+                padding: 0.8rem;
+                width: 8rem;
+                border-radius: 5px;
+                font-size: $size-font-main;
+                font-weight: 600;
+
+            }
+        }
+
+    }
+}

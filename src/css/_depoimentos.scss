@@ -1,0 +1,30 @@
+@import 'variables';
+
+#depoimentos {
+    .container {
+        margin: 0;
+        padding: 2rem;
+        h1 {
+            font-family:$font-sec;
+            color: $color-sec;
+            font-size: 36px;
+            strong {
+                font-weight: 900;
+            }
+            }
+        .row {
+            .card {
+                margin-top: 2rem;
+                font-family: $font-main;
+                color: $color-sec;
+                .nome-cliente {
+                    color: $color-sec;
+                }
+            }
+        }
+
+        }
+    }
+
+
+    
