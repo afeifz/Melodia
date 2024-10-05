@@ -36,6 +36,10 @@
   font-size: 16px;
   font-weight: 600;
 }
+.apresentationas .apresentationa-content button:hover {
+  background-color: #32f0a1;
+  transition: 0.4s;
+}
 .apresentationas .sections-apresentationa {
   display: flex;
   justify-content: center;
@@ -56,12 +60,30 @@
   font-family: "Onest", sans-serif;
 }
 
+@media (max-width: 1000px) {
+  .apresentationas {
+    height: 120vh;
+    overflow-y: auto;
+  }
+  .sections-apresentationa {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sections-apresentationa section {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .apresentationa-content {
+    gap: 2rem;
+  }
+}
 .funtionalities {
   height: 100vh;
   background-color: #F8F9FA;
   display: flex;
   flex-direction: column;
   padding: 5rem;
+  flex-basis: 100%;
 }
 .funtionalities .funtionalities-content {
   display: flex;
@@ -71,6 +93,7 @@
   font-family: "Big Shoulders Text", sans-serif;
   color: #181e4e;
   font-size: 36px;
+  margin-right: 15px;
 }
 .funtionalities .funtionalities-content h1 strong {
   font-weight: 900;
@@ -85,17 +108,23 @@
   font-size: 16px;
   font-weight: 600;
 }
+.funtionalities .funtionalities-content button:hover {
+  background-color: #32f0a1;
+  transition: 0.4s;
+}
 .funtionalities .cards-funtionalities {
   display: flex;
   gap: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .funtionalities .cards-funtionalities section {
   width: 18rem;
   background-color: #FFFFFF;
   padding: 3rem;
-  height: 28rem;
+  height: 24rem;
   border: 1px solid rgba(250, 249, 249, 0.7411764706);
-  margin-top: 2rem;
+  margin-top: 5rem;
   border-radius: 5px;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
@@ -124,9 +153,25 @@
   }
 }
 
+@media (max-width: 1000px) {
+  .cards-funtionalities {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .cards-funtionalities section {
+    overflow-y: auto;
+  }
+  .funtionalities {
+    height: 1300px;
+    overflow-y: auto;
+  }
+  .funtionalities .funtionalities-content button {
+    margin-right: 2rem;
+  }
+}
 #depoimentos .container {
-  margin: 0;
-  padding: 2rem;
+  margin: 1rem;
 }
 #depoimentos .container h1 {
   font-family: "Big Shoulders Text", sans-serif;
@@ -175,27 +220,125 @@
   font-family: "Onest", sans-serif;
 }
 
+.section-musics {
+  padding: 3rem 0;
+  background-color: #f0f0f0;
+}
+.section-musics h2 {
+  margin-left: 5rem;
+}
+.section-musics .music-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+  align-items: center;
+}
+.section-musics .music-container h2 {
+  font-family: "Big Shoulders Text", sans-serif;
+  font-size: 36px;
+  color: #181e4e;
+  margin-bottom: 2rem;
+}
+.section-musics .music-container .music-player {
+  background: #f0f0f0;
+  padding: 1rem;
+  margin: 1rem 0;
+  width: 18rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.section-musics .music-container .music-player .custom-audio-player {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  width: 13rem;
+}
+.section-musics .music-container .music-player .play-pause-btn {
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.section-musics .music-container .music-player .seek-bar {
+  flex: 1;
+  margin-right: 10px;
+}
+.section-musics .music-container .music-player .time-display {
+  color: white;
+}
+.section-musics .music-container .music-player.music-player:hover {
+  background-color: #181e4e;
+  color: #ffffff;
+  transition: 0.4s;
+  animation: backgroundShift 1.5s forwards;
+}
+@keyframes backgroundShift {
+  0% {
+    background-color: #FFFFFF;
+    background-position: right;
+  }
+  100% {
+    background-color: #181e4e;
+    background-position: left;
+  }
+}
+.section-musics .music-container .music-player h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  margin-bottom: 1rem;
+  color: #181e4e;
+}
+.section-musics .music-container .music-player .audio {
+  background-color: #61efb4;
+}
+@media (max-width: 768px) {
+  .section-musics .music-player {
+    padding: 1rem;
+  }
+  .section-musics .music-player h3 {
+    font-size: 18px;
+  }
+  .section-musics .music-player audio {
+    height: 35px;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
 }
 
 .header {
-  height: 100vh;
+  height: 90vh;
   background-color: #000000;
   color: white;
+  overflow: hidden;
 }
 .header .navigation {
+  position: fixed;
+  width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   font-family: "Onest", sans-serif;
   font-size: 16px;
   padding: 2rem;
-  margin: 0 5rem;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
 }
 .header .navigation .links-sections {
   display: flex;
   gap: 3rem;
+  flex-wrap: wrap;
 }
 .header .navigation .links {
   text-decoration: none;
@@ -207,6 +350,7 @@
   align-items: center;
   justify-content: center;
   gap: 6rem;
+  margin-top: 3rem;
 }
 .header .section-hero div {
   display: flex;
@@ -223,6 +367,29 @@
   border-radius: 5px;
   padding: 1rem;
   background-color: #61efb4;
+}
+.header .section-hero div button:hover {
+  background-color: #32f0a1;
+  transition: 0.4s;
+}
+
+.nav-scrolled {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 850px) {
+  .title-main {
+    display: none;
+  }
+  .section-hero {
+    flex-direction: column;
+  }
+  .section-hero h1 {
+    margin-top: 70px;
+  }
+  .mainimg {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -8,24 +8,26 @@
     <link rel="stylesheet" href="./src/css/apresentation.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="src/img/botao-play.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/73170762c9.js" crossorigin="anonymous"></script>
+    <script src="./src/js/animations.js" defer></script>
 </head>
 <body>
     <header class="header">
         <nav class="navigation">
-            <div>
+            <div class="title-main">
                 <a class="links" href="">Melodia</a>
             </div>
             <div class="links-sections">
                 <a class="links" href="">Home</a>
+                <a class="links" href="">Apresentação</a>
                 <a class="links" href="">Músicas</a>
-                <a class="links" href="">Sobre</a>
-                <a class="links" href="">Assinar</a>
+                <a class="links" href="">Funcionalidades</a>
                 <a class="links" href="">Contato</a>
             </div>
         </nav>
         <div class="section-hero">
-            <img src="./src/img/girl-listen-removebg-preview.png" alt="">
+            <img src="./src/img/girl.png" alt="">
             <div>
                 <h1>MELODIA</h1>
                 <h4>Sua Música Sua Forma</h4>
@@ -46,6 +48,39 @@
                 <section><i class="fa-solid fa-ban fa-xl"></i><br><br><h1>Sem Interrupções.</h1> <br><p> Curta suas músicas favoritas sem anúncios para atrapalhar.</p></section>
             </div>
         </section>
+        <section class="section-musics">
+            <h2>Curta suas Músicas Favoritas</h2>
+            <div class="music-container">
+                <div class="music-player">
+                    <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/169508644&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/thefatrat" title="TheFatRat" target="_blank" style="color: #cccccc; text-decoration: none;">TheFatRat</a> · <a href="https://soundcloud.com/thefatrat/thefatrat-unity-1" title="TheFatRat - Unity" target="_blank" style="color: #cccccc; text-decoration: none;">TheFatRat - Unity</a></div>
+                    <h5>Unity</h5>
+                    <p>TheFatRat</p>
+                    <div class="custom-audio-player">
+                        <button class="play-pause-btn"><i class="fa-solid fa-play" style="color: #181e4e;"></i></button>
+                        <audio id="audio" src=""></audio>
+                    </div>
+                </div>
+                <div class="music-player">
+                    <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/245224505&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/user-770735465" title="Rayan Tariq" target="_blank" style="color: #cccccc; text-decoration: none;">Rayan Tariq</a> · <a href="https://soundcloud.com/user-770735465/cartoon-on-and-on-ncs" title="Cartoon - On And On NCS" target="_blank" style="color: #cccccc; text-decoration: none;">Cartoon - On And On NCS</a></div>
+                    <h5>On and On</h5>
+                    <p>Cartoon</p>
+                    <div class="custom-audio-player">
+                        <button class="play-pause-btn"><i class="fa-solid fa-play" style="color: #181e4e;"></i></button>
+                        <audio id="audio" src="seu-audio.mp3"></audio>
+                    </div>
+                </div>
+                <div class="music-player">
+                    <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/209541707&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/janjimusic" title="Janji" target="_blank" style="color: #cccccc; text-decoration: none;">Janji</a> · <a href="https://soundcloud.com/janjimusic/janji-feat-johnning-heroes-tonight" title="Janji Feat. Johnning - Heroes Tonight [NCS Release](STREAM ON SPOTIFY!)" target="_blank" style="color: #cccccc; text-decoration: none;">Janji Feat. Johnning - Heroes Tonight [NCS Release](STREAM ON SPOTIFY!)</a></div>
+                    <h5>Heroes Tonight</h5>
+                    <p>Janji</p>
+                    <div class="custom-audio-player">
+                        <button class="play-pause-btn"><i class="fa-solid fa-play" style="color: #181e4e;"></i></button>
+                        <audio id="audio" src="seu-audio.mp3"></audio>
+                    </div>
+                </div>
+            </div>            
+        </section>
+    
         <section class="funtionalities">
             <div class="funtionalities-content">
                 <h1><strong>Nossas</strong> Funcionalidades</h1>
@@ -64,10 +99,6 @@
                     <h1>Descubra novos gostos com seus amigos</h1>
                     <p>Além de sugerirmos músicas novas para expandir seu gosto musical, juntamos você com seus amigos</p>
                 </section>
-                <section>
-                    <h1>Você é quem manda nas suas músicas!</h1>
-                    <p>Através do nosso player de musicas, é possível alterar os sons da música, podendo ser apenas instrumental.</p>
-                </section>
             </div>
         </section>
         <section id="depoimentos" class="p-5 bg-white">
@@ -76,7 +107,7 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card">
-                            <img src="./src/img/como-definir-o-rosto-definitivamente-a-segunda-imagem-é-de-v0-ih1rtz86maia1.webp" class="card-img-top" alt="Foto do Cliente">
+                            <img src="./src/img/joao.webp" class="card-img-top" alt="Foto do Cliente">
                             <div class="card-body">
                                 <blockquote class="blockquote">
                                     <p>"Musicas excelente, recomendo a todos! Baixem Melodia!"</p>
@@ -138,13 +169,12 @@
                         <p>Email: contato@suaempresa.com.br</p>
                     </div>
                     <div class="col-md-6 text-md-end">
-                        <a href="https://facebook.com" class="text-white me-2"><i class="fab fa-facebook-f"></i> Facebook</a>
-                        <a href="https://instagram.com" class="text-white me-2"><i class="fab fa-instagram"></i> Instagram</a>
-                        <a href="PP.html" class="text-white"><i class="fas fa-user-shield"></i> Política de Privacidade</a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i> Facebook</a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i> Instagram</a>
+                        <a href="#" class="text-white"><i class="fas fa-user-shield"></i> Política de Privacidade</a>
                     </div>
                 </div>
             </div>
         </footer>
-    
 </body>
 </html>

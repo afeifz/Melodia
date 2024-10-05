@@ -4,28 +4,38 @@
 @import 'depoimentos';
 @import 'contato';
 @import 'rodape';
+@import 'musics';
 
 * {
     margin: 0;
     padding: 0;
-
+    box-sizing: border-box;
 }
 
+    body {
+        width: 100%;
+    }
 
 .header {
-    height: 100vh;
+    height: 90vh;
     background-color: #000000;
     color: white;
+    overflow: hidden;
     .navigation  {
+        position: fixed;
+        width: 100%;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         font-family: "Onest", sans-serif;
         font-size: $size-font-main;
         padding: 2rem;
-        margin: 0 5rem;
+        z-index: 1000;
+        transition: background-color 0.3s ease;
         .links-sections {
             display: flex;
             gap: 3rem;
+            flex-wrap: wrap;
         }
         .links {
             text-decoration: none;
@@ -38,6 +48,7 @@
         align-items: center;
         justify-content: center;
         gap: 6rem;
+        margin-top: 3rem;
         div {
             display: flex;
             flex-direction: column;
@@ -52,7 +63,34 @@
                 border-radius: 5px;
                 padding: 1rem;
                 background-color: $color-main;
+                &:hover {
+                    background-color: $color-hover;
+                    transition: .4s;
+                }
             }
         }
+    }
+}
+
+.nav-scrolled {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+@media (max-width: 850px) {
+    .title-main {
+        display: none;
+    }
+    .section-hero {
+        flex-direction: column;
+    }
+
+    .section-hero h1 {
+        margin-top: 70px;
+    }
+
+    .mainimg {
+        display: none;
     }
 }
